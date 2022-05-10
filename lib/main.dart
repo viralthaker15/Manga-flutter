@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
                   child: Align(
                     alignment: Alignment.center,
                     child: Text(
-                      'Hello World',
+                      'Hello Worlds',
                     ),
                   ),
                   decoration: BoxDecoration(color: Colors.transparent)),
