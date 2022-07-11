@@ -12,30 +12,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: 'Hot Reload not working',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Mutter'),
-          backgroundColor: Colors.green,
-        ),
-        body: const Align(
-          alignment: Alignment.center,
-          child: SizedBox(
-            height: 15,
-            width: 120,
-            child: Align(
-              child: DecoratedBox(
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      'Hello Worlds',
-                    ),
-                  ),
-                  decoration: BoxDecoration(color: Colors.transparent)),
-            ),
+          appBar: AppBar(
+            title: const Text('Mutter'),
+            backgroundColor: Colors.green,
           ),
-        ),
-      ),
+          body: Center(
+              child: Container(
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.red)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8),
+                    child: Text("hello ji"),
+                  )))),
     );
   }
 }
